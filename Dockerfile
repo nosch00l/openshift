@@ -24,8 +24,6 @@ RUN set -ex \
 && rm -rf v2ray-v$VER-linux-64 \
 && chgrp -R 0 /v2raybin \
 && chmod -R g+rwX /v2raybin 
-
-ENV PATH /usr/bin/v2ray:$PATH
  
 ADD entrypoint.sh /entrypoint.sh
 
