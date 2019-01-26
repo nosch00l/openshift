@@ -14,7 +14,7 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && chmod -R g+rwX /v2raybin
  
 ADD entrypoint.sh /entrypoint.sh
-ADD config.json /v2raybin/
+ADD config.json /v2raybin/config.json
 
 RUN chmod +x /entrypoint.sh 
 
