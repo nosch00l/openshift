@@ -1,4 +1,4 @@
-cd v2ray
+cd /v2raybin
 echo -e "$CONFIG_JSON" > config.json
 if [ "$CERT_PEM" != "$KEY_PEM" ]; then
   echo -e "$CERT_PEM" > cert.pem
