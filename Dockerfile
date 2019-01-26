@@ -8,6 +8,8 @@ RUN /tmp/go.sh
 
 FROM alpine:latest
 
+ENV CONFIG_JSON=none CERT_PEM=none KEY_PEM=none
+
 LABEL maintainer "Darian Raymond <admin@v2ray.com>"
 RUN mkdir -m 777 /v2raybin \ 
 && cd /v2raybin
